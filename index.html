@@ -17,14 +17,14 @@
         <section id="input-section">
             <h2 class="prompt">Bill</h2>
             <img src="images/icon-dollar.svg" alt="dollar-sign-icon" id="dollar-sign-icon">
-            <input type="text" name="bill" id="billInput">
+            <input type="text" name="bill" placeholder="0" id="billInput">
             
             <div id="tip-input">
                 <h2 class="prompt">Select Tip %</h2>
                 <div id="tip-buttons">
                     <button class="tip-button">5%</button>
                     <button class="tip-button">10%</button>
-                    <button class="tip-button selected">15%</button>
+                    <button class="tip-button">15%</button>
                     <button class="tip-button">25%</button>
                     <button class="tip-button">50%</button>
                     <button class="tip-button custom">Custom</button>
@@ -33,11 +33,25 @@
             
             <h2 class="prompt">Number of People</h2>
             <img src="images/icon-person.svg" alt="person-icon" id="person-icon">
-            <input type="text" name="numPeople" id="numPeopleInput">
+            <input type="text" name="numPeople" placeholder="0" id="numPeopleInput">
         </section>
         
         <section id="output-section">
-            
+            <div id="tip-amount" class="output-inner">
+                <div>
+                    <p class="output-title">Tip Amount</p>
+                    <p class="per-person">/ person</p>
+                </div>
+                <p id="tip-per-person" class="total-text">$0.00</p>
+            </div>
+            <div id="total" class="output-inner">
+                <div>
+                    <p class="output-title">Total</p>
+                    <p class="per-person">/ person</p>
+                </div>
+                <p id="total-per-person" class="total-text">$0.00</p>
+            </div>
+            <button class="reset-button">Reset</button>
         </section>
     </div>
     <script src="script.js"></script>
