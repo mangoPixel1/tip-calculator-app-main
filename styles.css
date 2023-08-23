@@ -23,3 +23,88 @@
 body {
     background-color: var(--lightgrayishcyan);
 }
+
+#main-title {
+    margin: 30px 0;
+    color: var(--darkgrayishcyan);
+    font-size: 24px;
+    letter-spacing: 9px;
+    text-align: center;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 30px;
+    width: 375px;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+
+.prompt {
+    margin-bottom: 5px;
+    color: var(--darkgrayishcyan);
+    font-size: 16px;
+}
+
+input {
+    padding: 0 20px;
+    text-align: right;
+    color: var(--verydarkcyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#dollar-sign-icon, #person-icon {
+    position: absolute;
+    padding: 15px;
+}
+
+#billInput {
+    border: none;
+    background-color: var(--verylightgrayishcyan);
+    height: 45px;
+    width: 100%;
+}
+
+#billInput::placeholder {
+    text-align: left;
+}
+
+#tip-input {
+    margin: 30px 0;
+}
+
+#tip-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.tip-button {
+    width: 150px;
+    height: 45px;
+    color: var(--verylightgrayishcyan);
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--verydarkcyan);
+    border: none;
+    border-radius: 5%;
+}
+
+.custom {
+    color: var(--darkgrayishcyan);
+    background-color: var(--verylightgrayishcyan);
+}
+
+.selected {
+    color: var(--verydarkcyan);
+    background-color: var(--strongcyan);
+}
+
+#numPeopleInput {
+    border: none;
+    background-color: var(--verylightgrayishcyan);
+    height: 45px;
+    width: 100%;
+}
