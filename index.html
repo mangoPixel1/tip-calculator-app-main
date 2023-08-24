@@ -15,9 +15,12 @@
 
     <div id="container">
         <section id="input-section">
-            <h2 class="prompt">Bill</h2>
+            <div id="bill-title">
+                <h2 class="prompt">Bill</h2>
+                <p class="bill-error">Can't be zero</p>
+            </div>
             <img src="images/icon-dollar.svg" alt="dollar-sign-icon" id="dollar-sign-icon">
-            <input type="text" name="bill" placeholder="0" id="billInput">
+            <input type="text" name="bill" placeholder="0" class="billInput">
             
             <div id="tip-input">
                 <h2 class="prompt">Select Tip %</h2>
@@ -31,9 +34,13 @@
                 </div>
             </div>
             
-            <h2 class="prompt">Number of People</h2>
+            <div id="numPeople-title">
+                <h2 class="prompt">Number of People</h2>
+                <p class="numPeople-error">Can't be zero</p>
+            </div>
+            
             <img src="images/icon-person.svg" alt="person-icon" id="person-icon">
-            <input type="text" name="numPeople" placeholder="0" id="numPeopleInput">
+            <input type="text" name="numPeople" placeholder="0" class="numPeopleInput">
         </section>
         
         <section id="output-section">
