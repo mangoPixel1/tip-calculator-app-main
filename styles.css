@@ -192,6 +192,7 @@ input {
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .output-title {
@@ -239,4 +240,50 @@ input {
 
 .reset-enabled:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    #main-title {
+        margin: 70px 0;
+    }
+    
+    #container {
+        display: flex;
+        width: 885px;
+    }
+
+    #input-section {
+        padding: 0 50px 0 15px;
+        width: 50%;
+    }
+
+    #tip-buttons {
+        grid-template-columns: auto auto auto;
+    }
+
+    .tip-button {
+        width: 115px;
+        height: 50px;
+    }
+
+    .custom-tip-input {
+        width: 115px;
+        height: 50px;
+    }
+
+    #output-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .total-text {
+        font-size: 2.8rem;
+    }
+
+    .reset-button {
+        margin: 0 auto 10px auto;
+        width: 95%;
+    }
 }
