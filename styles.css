@@ -124,6 +124,19 @@ input {
     background-color: var(--verylightgrayishcyan);
 }
 
+.custom-tip-input {
+    outline: 2px solid hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
 .selected {
     color: var(--verydarkcyan);
     background-color: var(--strongcyan);

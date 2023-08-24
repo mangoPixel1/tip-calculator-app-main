@@ -45,6 +45,9 @@ const tipButtons = document.querySelectorAll('.tip-button');
 
 tipButtons.forEach(button => {
     button.addEventListener('click', (event) => {
+        document.querySelector('.custom').classList.remove('invisible');
+        document.querySelector('.custom-tip-input').classList.add('invisible');
+
         if (event.target.classList.contains('selected')) {
             return; // if button clicked is already selected: do nothing
         }
@@ -55,10 +58,24 @@ tipButtons.forEach(button => {
             }
         });
 
-        event.target.classList.add('selected');
-        const tipPercent = event.target.textContent.slice(0, -1);
-        calculateTip(tipPercent);
+        if (event.target.classList.contains('custom')) {
+            document.querySelector('.custom').classList.add('invisible');
+            document.querySelector('.custom-tip-input').classList.remove('invisible');
+        } else {
+            event.target.classList.add('selected');
+            const tipPercent = event.target.textContent.slice(0, -1);
+            calculateTip(tipPercent);
+        }
+        
+        
     });
+});
+
+document.querySelector('.custom-tip-input').addEventListener('keyup', (event) => {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        calculateTip(event.target.value);
+    }
 });
 
 // Reset all values when reset button is clicked
